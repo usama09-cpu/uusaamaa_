@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, rgb(255, 0, 162), rgb(1, 1, 255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content {
+  display: flex;
+  max-height: 300px;
+  max-width: 600px;
+  background-color: white;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.container .content .profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin-left: -55px;
+  height: 300px;
+  border-right: 5px solid black;
+  -moz-transform: scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
+  -webkit-transform: scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
+  transform: scaleX(1) scaleY(1) scaleZ(1) skewX(-20deg);
+  overflow: hidden;
+  background-color: #e6b975;
+}
+.container .content .profil img {
+  width: 350px;
+  margin-left: 25px;
+  height: 350px;
+  -moz-transform: scaleX(1) scaleY(1) scaleZ(1) skewX(20deg);
+  -webkit-transform: scaleX(1) scaleY(1) scaleZ(1) skewX(20deg);
+  transform: scaleX(1) scaleY(1) scaleZ(1) skewX(20deg);
+}
+.container .content .kanan {
+  width: 250px;
+  height: 300px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.container .content .kanan .isi {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  height: 60px;
+  font-family: azonix;
+  font-size: 18px;
+  line-height: 30px;
+  border-bottom: 2px solid black;
+}
+.container .content .kanan .isi .text {
+  text-align: center;
+}
+.container .content .kanan .sosmed {
+  margin-top: 5px;
+  width: 100px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+.container .content .kanan .sosmed a img {
+  height: 20px;
+  width: 20px;
+}
+.container .content .kanan .sosmed a:hover {
+}
+
+@media screen and (max-width: 576px) {
+  .container .content {
+    display: flex;
+    max-height: 150px;
+    max-width: 300px;
+  }
+  .container .content .profil {
+    width: 175px;
+    margin-left: -27px;
+    height: 150px;
+  }
+  .container .content .profil img {
+    width: 175px;
+    margin-left: 20px;
+    height: 175px;
+  }
+  .container .content .kanan {
+    width: 125px;
+    height: 150px;
+  }
+  .container .content .kanan .isi {
+    width: 150px;
+    height: 30px;
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .container .content .kanan .sosmed {
+    margin-top: 0px;
+    width: 50px;
+  }
+  .container .content .kanan .sosmed a img {
+    height: 10px;
+    width: 10px;
+  }
+}
